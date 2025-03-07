@@ -19,21 +19,22 @@
         <div id="titoliCulturali">
             <h2>titoli culturali</h2>
             <div>
-                <form>
+                <form id="formTitoli" onsubmit="addTitolo(event)">
                     <input type="text" placeholder="titolo" id="titolo">
                     <input type="text" placeholder="anno" id="anno">
-                    <button>+</button>
+                    <button type="submit">+</button>
                 </form>
             </div>
         </div>
+        
         <div id="esperienzeLavorative">
             <h2>esperienze lavorative</h2>
             <div>
-                <form>
+                <form id="formEsperienze" onsubmit="addEsperienza(event)">
                     <input type="text" placeholder="azienda" id="azienda">
                     <input type="text" placeholder="dal" id="dal">
                     <input type="text" placeholder="al" id="al">
-                    <button>+</button>
+                    <button type="submit">+</button>
                 </form>
             </div>
         </div>
