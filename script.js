@@ -10,10 +10,10 @@ function addTitolo(event) {
     p.innerHTML = "titolo: "+titolo +" | anno: "+ anno;
     rm = document.createElement("button");
     rm.innerHTML="-";
-    rm.setAttribute("onClick","remove()");
+    rm.setAttribute("onClick","remove(this)");
 
     newDiv.appendChild(p);
-    newDiv.append(rm);
+    newDiv.appendChild(rm);
     titoliCulturali.appendChild(newDiv);
 
  
@@ -32,8 +32,12 @@ function addEsperienza(event){
     newDiv = document.createElement("div");
     p = document.createElement("p");
     p.innerHTML = "azienda: "+azienda+" | anno: "+dal+"/"+al;
+    rm = document.createElement("button");
+    rm.innerHTML="-";
+    rm.setAttribute("onClick","remove(this)");
 
     newDiv.appendChild(p);
+    newDiv.appendChild(rm);
     formEsperienze.appendChild(newDiv);
 
     document.getElementById("azienda").value = '';
@@ -42,6 +46,5 @@ function addEsperienza(event){
 }
 
 function remove(id){
-    //TEST
-    window.alert("rimozione");
+    id.parentElement.remove();
 }
