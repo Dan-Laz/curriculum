@@ -1,0 +1,17 @@
+body{
+    font-family: Franklin Gothic Medium;
+    color:white;
+    background-color: rgb(59, 59, 59);
+}
+
+input,
+button{
+    background-color: white;
+    color: #3b3b3b;
+    border-radius: 5px;
+    border-width: 0;
+}
+
+input::placeholder{
+    color: rgb(59, 59, 59);
+}
