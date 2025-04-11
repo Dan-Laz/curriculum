@@ -2,49 +2,16 @@ function addTitolo(event) {
     event.preventDefault();
 
     titoliCulturali = document.getElementById("titoliCulturali");
-    titolo = document.getElementById("titolo").value;
-    anno = document.getElementById("anno").value;
-
-    newDiv = document.createElement("div");
-    p = document.createElement("p");
-    p.innerHTML = "titolo: "+titolo +" | anno: "+ anno+" ";
-    rm = document.createElement("button");
-    rm.innerHTML="-";
-    rm.setAttribute("onClick","remove(this)");
-
-    newDiv.appendChild(p);
-    p.appendChild(rm);
-    titoliCulturali.appendChild(newDiv);
-
- 
-    document.getElementById("titolo").value = '';
-    document.getElementById("anno").value = '';
+    titoliCulturali.innerHTML += "<div><input type='text' placeholder='titolo' id='titolo[]'> <input type='text' placeholder='anno' id='anno'> <button onclick='remove(this)'>-</button></br></div>";
 }
 
 function addEsperienza(event){
     event.preventDefault();
 
     formEsperienze = document.getElementById("formEsperienze");
-    azienda = document.getElementById("azienda").value;
-    dal = document.getElementById("dal").value;
-    al = document.getElementById("al").value;
-
-    newDiv = document.createElement("div");
-    p = document.createElement("p");
-    p.innerHTML = "azienda: "+azienda+" | anno: "+dal+"/"+al+" ";
-    rm = document.createElement("button");
-    rm.innerHTML="-";
-    rm.setAttribute("onClick","remove(this)");
-
-    newDiv.appendChild(p);
-    p.appendChild(rm);
-    formEsperienze.appendChild(newDiv);
-
-    document.getElementById("azienda").value = '';
-    document.getElementById("dal").value = '';
-    document.getElementById("al").value = '';
+    formEsperienze.innerHTML += "<div><input type='text' placeholder='azienda' id='azienda'> <input type='text' placeholder='dal' id='dal'> <input type='text' placeholder='al' id='al'> <button onclick='remove(this)'>-</button></br></div>";
 }
 
 function remove(id){
-    id.parentElement.parentElement.remove();
+    id.parentElement.remove();
 }

@@ -18,10 +18,13 @@
         <div id="titoliCulturali">
             <h2>titoli culturali</h2>
             <div>
-                <form id="formTitoli" onsubmit="addTitolo(event)">
-                    <input type="text" placeholder="titolo" id="titolo">
-                    <input type="text" placeholder="anno" id="anno">
-                    <button type="submit">+</button>
+                <form id="formTitoli" action="http://192.168.112.2/4id/index.php">
+                    <div>
+                        <input type="text" placeholder="titolo" id="titolo">
+                        <input type="text" placeholder="anno" id="anno">
+                        <button onclick="addTitolo(event)">+</button>
+                        <button type="submit">submit</button>
+                    </div>
                 </form>
             </div>
         </div>
@@ -29,11 +32,14 @@
         <div id="esperienzeLavorative">
             <h2>esperienze lavorative</h2>
             <div>
-                <form id="formEsperienze" onsubmit="addEsperienza(event)">
-                    <input type="text" placeholder="azienda" id="azienda">
-                    <input type="text" placeholder="dal" id="dal">
-                    <input type="text" placeholder="al" id="al">
-                    <button type="submit">+</button>
+                <form id="formEsperienze" action="http://192.168.112.2/4id/index.php">
+                    <div>
+                        <input type="text" placeholder="azienda" id="azienda">
+                        <input type="text" placeholder="dal" id="dal">
+                        <input type="text" placeholder="al" id="al">
+                        <button onclick="addEsperienza(event)">+</button>
+                        <button type="submit">submit</button>
+                    </div>
                 </form>
             </div>
         </div>
