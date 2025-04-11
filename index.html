@@ -20,8 +20,8 @@
             <div>
                 <form id="formTitoli" action="http://192.168.112.2/4id/index.php">
                     <div>
-                        <input type="text" placeholder="titolo" id="titolo">
-                        <input type="text" placeholder="anno" id="anno">
+                        <input type="text" placeholder="titolo" class="titolo" name="titolo[]">
+                        <input type="text" placeholder="anno" class="anno" name="anno[]">
                         <button onclick="addTitolo(event)">+</button>
                         <button type="submit">submit</button>
                     </div>
@@ -34,9 +34,9 @@
             <div>
                 <form id="formEsperienze" action="http://192.168.112.2/4id/index.php">
                     <div>
-                        <input type="text" placeholder="azienda" id="azienda">
-                        <input type="text" placeholder="dal" id="dal">
-                        <input type="text" placeholder="al" id="al">
+                        <input type="text" placeholder="azienda" class="azienda" name="azienda[]">
+                        <input type="text" placeholder="dal" class="dal" name="dal[]">
+                        <input type="text" placeholder="al" class="al" name="al[]">
                         <button onclick="addEsperienza(event)">+</button>
                         <button type="submit">submit</button>
                     </div>
